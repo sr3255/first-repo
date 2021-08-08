@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>E-Commerce | About Us</title>
+        <link rel="icon" href="images/meesho.jpg">
+        <meta http-equiv="Content-Type" content="text/html:charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet">
+    </head>
+    <body>
+        <nav class="nav nav_top">
+            <div class=logo>
+                <a href="index.html"><img src="images/meesho.jpg" width="100">
+            </div>
+            <div class="nav_side">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="signup.html">Sign Up/Login</a>
+            </div>
+        </nav>
+        <div class="about_us">
+            <h2>ABOUT US</h2>
+            <div class="about_container">
+            <p>American multinational technology company which focuses on e-commerce, 
+            cloud computing, digital streaming, and artificial intelligence. 
+            It is one of the Big Five companies in the U.S. information technology industry, 
+            along with Google, Apple, Microsoft, and Facebook.
+             The company has been referred to as 
+            "one of the most influential economic and cultural forces in the world", 
+            as well as the world's most valuable brand.</p><hr>
+            <h2>OUR MISSION</h2>
+            <p>Top brands for Phones and Electronics.
+             Latest trends in Fashion. 
+            Free Shipping available* 
+            Choose from a vast selection of the best quality products. 
+            100% Purchase protection. Easy Returns. Pay On Delivery. Huge Selection. 
+            100% Purchase Protection. Free Shipping*.
+            its disruption of well-established industries through technological
+             innovation and mass scale. It is the world's largest online marketplace,
+             AI assistant provider, live-streaming platform and cloud computing platform
+             as measured by revenue and market capitalization.</p>
+            </div>
+            <div class="feed">
+            <h2>Write Your Review</h2>
+            <div class="feed_form">
+            
+            <form name="submit-googlesheet" method="post">
+            <input type="text" name="Name" placeholder="Name"><br>
+            <input type="email" name="Email" placeholder="Email ID"><br>
+            <textarea rows="3" cols="20" name="Review" placeholder="Write Your Review"></textarea><br>
+            <button type="submit">Submit</button><br>
+            <button type="reset">Refresh</button><br>
+            </form>
+            </div>
+            </div>
+            </div>
+            <footer>
+                <div class="footer_logo">
+                  <a href="index.html"><img src="images/meesho.jpg" width="100"></a>
+                </div>
+                <div class="pages">
+                  <h3>Pages</h3>
+                  <a href="about.html">About us |</a>
+                  <a href="services.html">Services |</a>
+                  <a href="blogs.html">Blogs |</a>
+                  <a href="contact.html">Contact |</a>
+                  <a href="signup.html">sign up</a>
+                </div>
+                <div class="doc">
+                  <h3>Documents</h3>
+                  <a href="">Privacy and Policy |</a>
+                  <a href="">Terms and Use |</a>
+                  <a href="">Refund policy</a>
+                </div>
+                <div class="media">
+                  <div class="media_container">
+                    <div class="social">
+                      <h3>Follow Us</h3>
+                      <a href="https://m.facebook.com/meeshosupply/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a href="https:www.instagram.com/meesho/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="https://in.linkedin.com/company/meesho" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </div>
+                <div class="contact">
+                  <h3>Contact Us</h3>
+                  <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                  <a href="tel:+9108061799600"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                  <a href="mailto:help@meesho.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    </div>                
+                  </div>
+                  <hr>
+                  <div class="copy">
+                      <p>Copyright © 2021 meesho. Allrights reserved</p>
+                  </div>
+                </div>
+                
+                  
+              </footer>
+              <script>
+                const scriptURL="https://script.google.com/macros/s/AKfycbzlVRoZkAQkU1pvOA4xZ0fseNCXo7abJNK1Ych_eWURIHkb6ZKHdd_JJUzUgX9mAYrY/exec"
+                const form = document.forms['submit-googlesheet']
+                          
+                            form.addEventListener('submit', e => {
+                              e.preventDefault()
+                              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                                .catch(error => console.error('Error!', error.message))
+                            })
+                </script>
+            </body>
+    
+ 
+            </html>
